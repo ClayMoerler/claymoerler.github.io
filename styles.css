@@ -1,0 +1,27 @@
+*{
+    text-decoration: none;
+}
+
+/* Temp */
+    
+.navbar{
+    height: 64px;
+    width: 100%;
+    background: #EDD8CC;
+    font-family: calibri;      
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navdiv{
+    list-style: none;
+    display: flex;
+    gap: 18px;
+    margin: 0 20px;
+    padding: 0;
+}
+
+.logo{
+    padding: 0 12px;
+}
