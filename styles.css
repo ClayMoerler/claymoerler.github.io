@@ -1,27 +1,110 @@
 *{
-    text-decoration: none;
-}
-
-/* Temp */
-    
-.navbar{
-    height: 64px;
-    width: 100%;
-    background: #EDD8CC;
-    font-family: calibri;      
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.navdiv{
-    list-style: none;
-    display: flex;
-    gap: 18px;
-    margin: 0 20px;
+    box-sizing: border-box;
+    margin: 0;
     padding: 0;
 }
 
+:root {
+    --primary-color: #DE2A04;
+}
+    
+body {
+    font-family: calibri;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+a {
+    text-decoration: none;
+    color: #333
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* Utility Classes */
+
+.container{
+    max-width: 1100px; /* default for now */
+    margin: 0 auto;
+    padding: 0 15px;
+    display: flex;
+}
+
+.container-sm{
+    max-width: 800px; /* default for now */
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* Nav Bar */
+
+.navbar{
+    padding: 20px;      
+}
+
+.navbar .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+}
+
+.navbar .menu-options ul{
+    display: flex;
+}
+
+.navbar ul li a {
+    padding: 10px 20px;
+    display: block;
+    font-weight: 600;
+    transition: 0.5s;
+}
+
+.navbar ul li a:hover {
+    color: var(--primary-color);
+}
+
+.navbar ul li a i {
+    margin-right: 10px;
+}
+
+.navbar ul li:last-child a {
+    margin-left: 10px;
+}
+  
+/* Buttons */
+.btn {
+    /* temp */
+    display: inline-block;
+    padding: 13px 20px;
+    background: none; 
+    color: none;
+    font-weight: none;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.btn:hover {
+    opacity: 0.8;
+}
+
+.btn-primary{
+    background: var(--primary-color);
+    color: #fff;
+}
+
+
+/* Logo */
+
+
 .logo{
-    padding: 0 12px;
+    transition: 0.5s;
+    font-weight: 800;
 }
