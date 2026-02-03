@@ -30,8 +30,9 @@ img {
 /* Utility Classes */
 
 .container{
-    max-width: 1100px; /* default for now */
-    margin: 0 auto;
+    max-width: auto; /* default for now */ /* Width: 92%; for mobile. */
+    margin: auto;
+    height: 100%;
     padding: 0 10px;
     display: flex;
 }
@@ -39,7 +40,12 @@ img {
 /* Nav Bar */
 
 .navbar{
-    padding: 15px;      
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
+    background-color: white;
 }
 
 .navbar .container {
