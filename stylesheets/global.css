@@ -39,7 +39,7 @@ img {
 .container{
     width: min(1200px, 100% - 2rem); /* default for now */ /* Width: 92%; for mobile. */
     margin: 0 auto;
-    padding: 0;
+    padding: 0px;
 }
 
 /* Nav Bar */
@@ -58,7 +58,6 @@ img {
     height: 80px;
     justify-content: space-between;
     align-items: center;
-    border-bottom: solid 1px black;
 }
 
 .navbar .menu-options ul{

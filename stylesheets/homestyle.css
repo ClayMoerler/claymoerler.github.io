@@ -1,124 +1,160 @@
-/* Style sheet for the home page. */
+/* HERO SECTION */
 
-/* Hero */
 .hero {
-    width: 100%;
-    position: relative;
-    max-width: 2000px;
-    margin: 0 auto;
+  width: 100%;
+  position: relative;
 }
 
-.hero img{
-    width: 100%;
-    height:auto;
-    display: block;
+.hero img {
+  width: 100%;
+  max-height: 650px;
+  object-fit: cover;
+  display: block;
 }
 
-.hero .hero-overlay{
-    position: absolute;
-    inset: 0;
-    display: flex;
-    align-items: flex-end;
-    justify-content: flex-end;
-    padding: 20px;
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  padding: 20px;
 }
 
-.hero .hero-text{
-    position: static;
-    transform: none;
-    color: white;
-    text-align: right;
-    font-family: 'Courier New', Courier, monospace;
-    max-width: 80%;
-}   
+.hero-text {
+  color: white;
+  text-align: right;
+  font-family: 'Courier New', Courier, monospace;
+  max-width: 500px;
+}
 
-/* Cards */
+
+
+/* FEATURE / CARD SECTION */
 
 .feature-grid {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(260px, 1fr));
-    gap: 40px; /* this is your visible middle gap */
-    align-items: start;
+  background-color: var(--secondary-red);
+  padding: 20px 0px;
+}
+
+.feature-grid .container {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(260px, 1fr));
+  gap: 40px;                
+  align-items: start;
+}
+
+.cards {
+  background-color: var(--primary-red);
+  padding: 30px;
+}
+
+.card {
+  background-color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.card-text {
+  padding-bottom: 15px;
 }
 
 
 
-.feature-grid .container{
-    padding: 10px 20px;
-    padding-top: 10px;
-}      
-
-.cards{
-    display: grid;
-    background-color: var(--primary-red  );
-    padding: 20px;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-    gap: 30px;
-    max-width: 600px;
-}
-
-.card{
-    background-color: #fff;
-    padding: 10px;
-    text-align: center;
-}
-
-.card .card-text{
-    padding-bottom: 15px;
-}
-
-
-/* Seconday Photo */
+/* SECONDARY IMAGE SECTION */
 
 .secondary {
-    width: 100%;
-    position: relative;
-    max-width: 900px;
-    margin: 0 auto;
-    padding-left: 10px;
-    
+  width: 100%;
+  position: relative;
+  margin: 60px auto;
 }
 
-.secondary img{
-    width: 100%;
-    height:auto;
+.secondary img {
+  width: 100%;
+  height: min(60vh, 500px);
+  object-fit: cover;
+  display: block;
+}
+
+.secondary-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  padding: 20px;
+}
+
+.secondary-text {
+  color: white;
+  text-align: right;
+  font-family: 'Courier New', Courier, monospace;
+  max-width: 500px;
+}
+
+/* SIDEKICK SECITON  */
+
+.sidekick{
+  width: 100%;
+  position: relative;
+}
+
+.sidekick img{
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+
+.sidekick-bottom {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  padding: 20px;
+}
+
+.container .sidekick-text{
     display: block;
-}
-
-.secondary .secondary-overlay{
-    position: absolute;
-    inset: 0;
-    display: flex;
-    align-items: flex-end;
-    justify-content: flex-end;
-    padding: 20px;
-}
-
-.secondary .secondary-text{
-    position: static;
-    transform: none;
     color: white;
-    text-align: right;
-    font-family: 'Courier New', Courier, monospace;
-    max-width: 80%;
-}
-
-/* Estimate */
-
-.estimate{
-    padding: 20px;
-}
-
-.estimate-container{
-    display: flex;
     padding: 10px;
-    width: 800px;
-    height: 200px;
 }
 
-.estimate .estimate-container{
-    border: 5px solid darkred;
-    background-color: white;
-    align-items: center;
+.sidekick::after{
+  content:"";
+  position:absolute;
+  inset:0;
+  background: linear-gradient(to top, rgba(0,0,0,0.55), rgba(0,0,0,0));
+}
+
+.sidekick-overlay{
+  position:absolute;
+  inset:0;
+  display:flex;
+  place-items: center;
+  align-items:center;
+  justify-content:center;
+  padding:20px;
+  z-index:1; /* above gradient */
+}
+
+/*  RESPONSIVE (MOBILE) */
+
+@media (max-width: 768px) {
+
+  .feature-grid .container {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-overlay,
+  .secondary-overlay {
     justify-content: center;
+    text-align: center;
+  }
+
+  .hero-text,
+  .secondary-text {
+    max-width: 90%;
+  }
 }
