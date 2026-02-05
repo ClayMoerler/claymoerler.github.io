@@ -19,7 +19,11 @@
 }
 
 .hero-container .hero-text{
-    padding: 10px;
+    padding: 20px;
+    width: 800px;
+    background-color: var(--primary-white);
+    margin: auto;
+    border: 5px solid gray;
 }
 
 /* Grid and Cards */
@@ -34,8 +38,8 @@
 
 .family-card{
     padding: 2em;
-    border: 3px solid #222429;
+    border: 5px solid gray;
     border-radius: 10px;
-    background-color: gray;
+    background-color: var(--primary-white);
     text-align: center;
 }

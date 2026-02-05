@@ -5,13 +5,20 @@
 }
 
 :root {
-    --primary-color: #DE2A04;
+    --primary-red: #92140c;
+    --primary-grey: #1E1E24;
+    --primary-white: #fff8f0;
+    --primary-cream: #ffcf99;
+    --primary-blue: #111d4a;
+    --secondary-red: #460503;
 }
     
 body {
     font-family: calibri;
     font-size: 18px;
     line-height: 1.5;
+    padding-top: 80px;
+    background-color: var(--secondary-red);
 }
 
 a {
@@ -45,11 +52,12 @@ img {
     left: 0;
     width: 100%;
     z-index: 9999;
-    background-color: white;
+    background-color: var(--primary-white);
 }
 
 .navbar .container {
     display: flex;
+    height: 80px;
     justify-content: space-between;
     align-items: center;
     border-bottom: solid 1px black;
@@ -77,8 +85,8 @@ img {
     /* temp */
     display: inline-block;
     padding: 8px 15px;
-    background: var(--primary-color); 
-    border:2px solid var(--primary-color);
+    background: var(--primary-red); 
+    border:2px solid var(--primary-compliment);
     border-radius: 8px;
     cursor: pointer;
     transition: 0.1s;
