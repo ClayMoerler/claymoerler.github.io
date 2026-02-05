@@ -37,11 +37,9 @@ img {
 /* Utility Classes */
 
 .container{
-    max-width: auto; /* default for now */ /* Width: 92%; for mobile. */
-    margin: auto;
-    height: 100%;
-    padding: 0 10px;
-    display: flex;
+    width: min(1200px, 100% - 2rem); /* default for now */ /* Width: 92%; for mobile. */
+    margin: 0 auto;
+    padding: 0;
 }
 
 /* Nav Bar */
@@ -75,7 +73,7 @@ img {
 }
 
 .navbar ul li a:hover {
-    color: var(--primary-color);
+    color: var(--primary-red);
 }
 
 
@@ -87,7 +85,6 @@ img {
     padding: 8px 15px;
     background: var(--primary-red); 
     border:2px solid var(--primary-compliment);
-    border-radius: 8px;
     cursor: pointer;
     transition: 0.1s;
 }

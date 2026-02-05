@@ -4,7 +4,7 @@
 .hero {
     width: 100%;
     position: relative;
-    max-width: 1300px;
+    max-width: 2000px;
     margin: 0 auto;
 }
 
@@ -35,38 +35,48 @@
 /* Cards */
 
 .feature-grid {
-    padding-top: 10px;
-    width: 100%;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(260px, 1fr));
+    gap: 40px; /* this is your visible middle gap */
+    align-items: start;
 }
 
+
+
 .feature-grid .container{
-    padding: 0% 0%;
+    padding: 10px 20px;
     padding-top: 10px;
-}
+}      
 
 .cards{
     display: grid;
     background-color: var(--primary-red  );
-    padding: 20px 30px;
-    grid-template-columns: repeat(2,1fr);
+    padding: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
     gap: 30px;
+    max-width: 600px;
 }
 
 .card{
     background-color: #fff;
     padding: 10px;
     text-align: center;
-    border-radius: 5%;
 }
+
+.card .card-text{
+    padding-bottom: 15px;
+}
+
 
 /* Seconday Photo */
 
 .secondary {
     width: 100%;
     position: relative;
-    max-width: 1100px;
+    max-width: 900px;
     margin: 0 auto;
+    padding-left: 10px;
+    
 }
 
 .secondary img{
