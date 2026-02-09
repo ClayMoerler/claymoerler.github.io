@@ -5,10 +5,10 @@
 .hero{
     width: 100%;
 }
+
 .hero-container{
-    width: min(1100px, 100% - 2rem);
+    max-height: 600px;
     margin: 0 auto;
-    padding-bottom: 20px;
 }
 
 .hero-title{
