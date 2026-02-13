@@ -5,25 +5,24 @@
 }
 
 :root {
-    --primary-red: #92140c;
-    --primary-grey: #1E1E24;
-    --primary-white: #fff8f0;
-    --primary-cream: #ffcf99;
-    --primary-blue: #111d4a;
-    --secondary-red: #460503;
+    --primary-white: #FFFFFA;
+    --primary-charcoal: #515052;
+    --primary-black: #000103;
+    --primary-graphite: #333138;
+    --primary-cinnabar: #FF312E;
 }
     
 body {
-    font-family: calibri;
+    font-family: Lato;
     font-size: 18px;
     line-height: 1.5;
     padding-top: 80px;
-    background-color: var(--secondary-red);
+    background-color: var(--primary-charcoal);
 }
 
 a {
     text-decoration: none;
-    color: black;
+    color: var(--primary-black);
 }
 
 ul {
@@ -51,6 +50,9 @@ img {
     width: 100%;
     z-index: 9999;
     background-color: var(--primary-white);
+    font-family: "Baskervville SC", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
 }
 
 .navbar .container {
@@ -72,7 +74,7 @@ img {
 }
 
 .navbar ul li a:hover {
-    color: var(--primary-red);
+    color: var(--primary-cinnabar);
 }
 
 
@@ -82,19 +84,18 @@ img {
     /* temp */
     display: inline-block;
     padding: 8px 15px;
-    background: var(--primary-red); 
+    background: var(--primary-cinnabar); 
     border:2px solid var(--primary-compliment);
     cursor: pointer;
     transition: 0.1s;
 }
 
 .btn-text{
-    color: white;
+    color: var(--primary-white);
 }
 
 .btn:hover {
-    background: rgba(190, 11, 11, 0.692);
-    border: solid rgba(190, 11, 11, 0.692);
+    opacity: 80%;    
 }
 
 

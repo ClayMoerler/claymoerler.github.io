@@ -52,7 +52,7 @@
 }
 
 .cards {
-  background-color: var(--primary-red);
+  background-color: var(--primary-graphite);
   padding: 30px;
 }
 
@@ -72,6 +72,8 @@
   width: 100%;
   position: relative;
   margin: 60px auto;
+  padding: 10px;
+  background-color: var(--primary-graphite);
 }
 
 .secondary img {
