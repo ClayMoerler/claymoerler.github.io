@@ -2,18 +2,19 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    background-color: var();
 }
 
 :root {
     --primary-white: #FFFFFA;
-    --primary-charcoal: #515052;
+    --primary-gray: #353535;
     --primary-black: #000103;
     --primary-graphite: #333138;
     --primary-cinnabar: #FF312E;
 }
     
 body {
-    font-family: Lato;
+    font-family: Montserrat;
     font-size: 18px;
     line-height: 1.5;
     padding-top: 80px;
@@ -22,7 +23,7 @@ body {
 
 a {
     text-decoration: none;
-    color: var(--primary-black);
+    color: var(--primary-white);
 }
 
 ul {
@@ -49,15 +50,16 @@ img {
     left: 0;
     width: 100%;
     z-index: 9999;
-    background-color: var(--primary-white);
-    font-family: "Baskervville SC", serif;
+    background-color: var(--primary-graphite);
+    font-family: Montserrat;
     font-optical-sizing: auto;
-    font-style: normal;
+    font-style: bold;
+    transition: top 0.25s ease;
 }
 
 .navbar .container {
     display: flex;
-    height: 80px;
+    height: 100px;
     justify-content: space-between;
     align-items: center;
 }
@@ -67,17 +69,23 @@ img {
 }
 
 .navbar ul li a {
-    padding: 0px 10px;
-    display: block;
-    font-weight: 600;
-    transition: 0.2s;
+    display: flex;
+    align-items: center;
+    padding: 0px 15px;
+    height: 80px;
+    line-height: 1;
+    
 }
 
 .navbar ul li a:hover {
     color: var(--primary-cinnabar);
+    transition: 0.2s;
 }
 
-
+.logo img {
+    padding-top: 8px;
+    width: auto;    /* Keeps aspect ratio */
+}
 /* Buttons */
 
 .btn {
@@ -117,7 +125,7 @@ img {
 }
 
 .text-lg {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     line-height: 1.4;
     font-weight: normal;
     margin: 30px 0 20px;

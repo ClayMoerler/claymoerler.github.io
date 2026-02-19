@@ -6,21 +6,23 @@
     <title>PCUI</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Baskervville+SC:wght@400..700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <script src="scripts/navbar.js"></script>
     <link rel="stylesheet" href="stylesheets/global.css"/>
     <link rel="stylesheet" href="stylesheets/homestyle.css"/>
     <link rel="shortcun icon" href="images/saxofeet.png" type="image/x-icon" />
 </head>
+<script src="scripts/navbar.js"></script>
 <body>
-
     <!--NavBar-->
-    <nav class="navbar">
+    <nav id="navbar" class="navbar">
         <div class="container">
             <a href="home.html" class="logo">
-                <b class="text-xxl"> Prestige </b> <b class="text-lg"> Construction Unlimited Inc </b> 
+               <img src="images\logoDesign.png" alt="sample-image1">
             </a>
-            <div class="menu-options">
+            <div class="menu-options text-lg">
                 <ul>
                     <li> <a href="home.html"> Home </a>  </li>
                     <li> <a href="aboutUs.html"> About Us </a> </li>
@@ -48,7 +50,7 @@
         <div class="feature-grid">
             <div class="container">
                 <div class="cards">
-                    <article class="card text-lg">
+                    <article class="card card-text text-lg">
                         <h2> Projects </h2>
                         <div class="card-text text-md">
                             <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
@@ -62,7 +64,7 @@
                             <b>Projects</b>
                         </a>
                     </article>
-                    <article class="card text-lg">
+                    <article class="card card-text text-lg">
                         <h3> FAQ </h3>
                             <div class="text-md">
                                 <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
@@ -76,7 +78,7 @@
                             <b>FAQ</b>
                         </a>
                     </article>
-                    <article class="card text-lg">
+                    <article class="card card-text text-lg">
                         <h2> About Us </h2>
                         <div class="card-text text-md">
                             <p>     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
@@ -95,11 +97,6 @@
                 <!-- Image next to FAQ -->
                 <article class = "secondary">
                     <img src="images/sample-image1.jpg" alt="Sample Image">
-                        <div class="secondary-overlay">
-                            <div class="secondary-text">
-                                <p> Sample text </p>
-                            </div>
-                        </div>
                     </img>
                 </article>
             </div>
@@ -113,12 +110,8 @@
             <img src="images/sample-image1.jpg" alt="Sample Image">
             <div class="sidekick-overlay">
                 <div class="sidekick-text">
-                    <h1> Anything You Want Built, One Push Away </h1>
-                        <p> <a class="btn btn-text" href="contactUs.html"><b>Contact Us</b></a> </p>
-                    
-                    <div class="sidekick-bottom">
-                        <p> Sample Text </p>
-                    </div>
+                    <h1> Build Your Dream. </h1>
+                    <a class="btn btn-text" href="contactUs.html"> <b>Contact Us</b> </a> 
                 </div>
             </div>
         </div>

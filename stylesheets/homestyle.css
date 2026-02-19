@@ -26,6 +26,10 @@
   color: var(--primary-white);
 }
 
+body {
+  background-color: var(--primary-graphite);
+}
+
 
 /* .hero-overlay { 
   position: absolute;
@@ -52,18 +56,18 @@
 }
 
 .cards {
-  background-color: var(--primary-graphite);
   padding: 30px;
 }
 
 .card {
-  background-color: white;
+  background-color: var(--primary-graphite);
   padding: 20px;
   text-align: center;
 }
 
 .card-text {
-  padding-bottom: 15px;
+  padding-bottom: 20px;
+  color: white;
 }
 
 /* SECONDARY IMAGE SECTION */
@@ -83,14 +87,7 @@
   display: block;
 }
 
-.secondary-overlay {
-  position: absolute;
-  inset: 0;
-  display: flex;
-  align-items: flex-end;
-  justify-content: flex-end;
-  padding: 20px;
-}
+.seconday :hover
 
 .secondary-text {
   color: white;
@@ -110,7 +107,9 @@
   width: 100%;
   height: auto;
   display: block;
+  padding-bottom: 20px;
 }
+
 
 .sidekick-bottom {
   position: absolute;
@@ -121,18 +120,19 @@
   padding: 20px;
 }
 
-.container .sidekick-text{
-    display: block;
-    color: white;
-    padding: 10px;
+.sidekick-text {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;   
+  text-align: center;    
+  gap: 20px;             
 }
 
 .sidekick::after{
   content:"";
   position:absolute;
   inset:0;
-  background: linear-gradient(to top, rgba(0,0,0,0.55), rgba(0,0,0,0));
-
 }
 
 .sidekick-overlay{
