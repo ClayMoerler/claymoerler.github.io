@@ -7,9 +7,9 @@
 
 :root {
     --primary-white: #FFFFFA;
-    --primary-gray: #353535;
+    --primary-gray: #3D3B39;
     --primary-black: #000103;
-    --primary-graphite: #333138;
+    --primary-graphite: #201F21;
     --primary-cinnabar: #FF312E;
 }
     
@@ -18,7 +18,8 @@ body {
     font-size: 18px;
     line-height: 1.5;
     padding-top: 80px;
-    background-color: var(--primary-charcoal);
+    background-color: var(--primary-graphite);
+
 }
 
 a {
@@ -93,7 +94,6 @@ img {
     display: inline-block;
     padding: 8px 15px;
     background: var(--primary-cinnabar); 
-    border:2px solid var(--primary-compliment);
     cursor: pointer;
     transition: 0.1s;
 }
@@ -103,7 +103,9 @@ img {
 }
 
 .btn:hover {
-    opacity: 80%;    
+    background: red;
+    opacity: 90%;
+    transition: 0.2s;
 }
 
 
@@ -145,6 +147,3 @@ img {
     margin: 10px 0 5px;
 }
 
-.text-center{
-    text-align: center;
-}
