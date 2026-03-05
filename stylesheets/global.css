@@ -108,6 +108,21 @@ img {
     transition: 0.2s;
 }
 
+/* Footer classes */
+
+.footer{
+    position: relative;
+    margin: 0 auto;
+}
+
+.footer .footer-container{
+    display:flex;
+    object-fit: cover;
+    height: 400px;
+    align-items: center;
+    max-width: 1100px;
+    background: var(--primary-white);
+}
 
 
 /* Text Classes */ 

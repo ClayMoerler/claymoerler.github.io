@@ -2,6 +2,9 @@
 
 .hero{
   margin: 0;
+  position: relative; 
+  height: 600px;
+  overflow: hidden;
 }
 
 .hero-image{
@@ -15,58 +18,47 @@
   object-fit: cover;   
 }
 
-
-
 .hero-title{
   position: absolute;
   inset: 0;
   display: flex;
   align-items:flex-end;
-  justify-content: center;
+  justify-content: start;
+  padding-left: 30px;
   color: var(--primary-white);
 }
 
 
-/* .hero-overlay { 
-  position: absolute;
-  inset: 0;
-  display: flex;
-  align-items: flex-end;
-  justify-content: flex-end;
-  padding: 20px;
-}
-*/
 
 /* FEATURE / CARD SECTION */
 
 .feature-grid {
-  background-color: var(--secondary-red);
-  padding: 20px 0px;
+  display: grid;
+  max-width: 1200px;
+  align-items:center;
+  margin: 0px auto;
+  grid-template-columns: 1fr 700px;
+
 }
 
-.feature-grid .container {
-  gap: 20px;        
-  max-width: 1100px;
-  margin: 0 auto;
+
+.card {
+  max-width: 1200px;
+  padding: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  align-self: center;
 }
 
 .cards {
   padding: 30px;
   display: grid;
-  grid-template-columns: repeat(1, minmax(0, 1fr));
   gap: 20px;
   text-align: center;
-  max-width: 700px;
-}
-
-.card {
-  background-color: var(--primary-gray);
-  padding: 20px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  max-width: 600px;
 }
 
 .card:hover {
-  transform: translateY(-5px);
+  transform: translateY(-8px);
 }
 
 .card-text {
@@ -74,29 +66,35 @@
   color: white;
 }
 
+.cards.aboutus-text{
+  padding-top: 100px;
+}
+
 /* SECONDARY IMAGE SECTION */
 
 .secondary {
-  width: 100%;
-  position: flex;
-  flex-direction: end;
-  margin: 60px auto;
-  padding: 10px;
-  background-color: var(--primary-graphite);
+  max-width: 1100px;
+  justify-self: center;
 }
 
 .secondary img {
+  display: flex;
   width: 100%;
-  height: min(60vh, 500px);
   object-fit: cover;
   display: block;
 }
 
-.secondary-text {
-  color: white;
-  text-align: right;
-  font-family: 'Courier New', Courier, monospace;
-  max-width: 500px;
+.secondary.firstimg {
+  display: flex;
+  justify-self: flex-end;
+  padding-right: 50px;
+  padding-top: 100px;
+}
+
+.secondary.secondimg{
+  display: flex;
+  justify-self: flex-end;
+  padding-right: 0px;
 }
 
 /* SIDEKICK SECITON  */
@@ -110,7 +108,8 @@
   width: 100%;
   height: auto;
   display: block;
-  padding-bottom: 20px;
+  padding: 20px;
+  padding-top: 100px;
 }
 
 
